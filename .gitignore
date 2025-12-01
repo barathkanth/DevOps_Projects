@@ -1,6 +1,0 @@
-*.tfstate
-.terraform/
-__pycache__/
-*.pyc
-node_modules/
-build/
