@@ -1,0 +1,11 @@
+graph TD
+    A[Producer: API/CLI] -->|PutEvents| B[EventBridge Bus: orders-bus]
+    B --> C[Rule: OrderCreated to Lambda]
+    C --> D[Lambda: Order Processor]
+    B --> E[Rule: High Value Orders]
+    E --> F[Step Function: Fraud Detection]
+    D --> G[Kinesis Firehose]
+    G --> H[S3 Analytics Bucket]
+    D --> I[SQS DLQ]
+    B --> J[Event Archive]
+    J -->|Replay| B

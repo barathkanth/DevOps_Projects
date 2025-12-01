@@ -1,0 +1,9 @@
+{
+  "name": "producer",
+  "version": "1.0.0",
+  "main": "send_order.js",
+  "type": "module",
+  "dependencies": {
+    "@aws-sdk/client-eventbridge": "^3.0.0"
+  }
+}
