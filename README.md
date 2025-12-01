@@ -50,9 +50,6 @@ graph TD
     B --> J[Archive]
 ```
 
-## Demo
-[Add short GIF or video here]
-
 ## Cost
 Small — mostly Lambda invocations, Firehose data transfer, S3 storage. Estimate: <$10/month for low traffic. Use budget alerts in AWS.
 
